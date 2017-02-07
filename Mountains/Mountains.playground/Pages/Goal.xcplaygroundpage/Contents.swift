@@ -16,11 +16,36 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Draw some lines
-canvas.defaultLineWidth = 1
-canvas.drawLine(fromX: 100, fromY: 0, toX: 100, toY: 50)
-canvas.drawLine(fromX: 150, fromY: 0, toX: 150, toY: 100)
-canvas.drawLine(fromX: 200, fromY: 0, toX: 200, toY: 50)
+// Draw the dots
+canvas.drawEllipse(centreX: 0, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 25, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 50, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 75, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 100, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 125, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 150, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 175, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 200, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 225, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 250, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 275, centreY: 300, width: 3, height: 3)
+canvas.drawEllipse(centreX: 300, centreY: 300, width: 3, height: 3)
+
+canvas.drawEllipse(centreX: 0, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 25, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 50, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 75, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 100, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 125, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 150, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 175, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 200, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 225, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 250, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 275, centreY: 275, width: 3, height: 3)
+canvas.drawEllipse(centreX: 300, centreY: 275, width: 3, height: 3)
+
+
 
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
