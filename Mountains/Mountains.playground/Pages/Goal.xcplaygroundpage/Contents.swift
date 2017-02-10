@@ -17,34 +17,36 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 // Draw the dots
-canvas.drawEllipse(centreX: 0, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 25, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 50, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 75, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 100, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 125, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 150, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 175, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 200, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 225, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 250, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 275, centreY: 300, width: 3, height: 3)
-canvas.drawEllipse(centreX: 300, centreY: 300, width: 3, height: 3)
+for y in stride(from: 300, through: 150, by: -25) {
+    for x in stride (from: 0, through: 300, by: 25) {
+        canvas.drawEllipse(centreX: x, centreY: y, width: 3, height: 3)
+        
+    }
+}
 
-canvas.drawEllipse(centreX: 0, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 25, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 50, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 75, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 100, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 125, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 150, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 175, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 200, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 225, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 250, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 275, centreY: 275, width: 3, height: 3)
-canvas.drawEllipse(centreX: 300, centreY: 275, width: 3, height: 3)
 
+//Black Rectangle
+canvas.fillColor = Color(hue: 150, saturation: 0, brightness: 45, alpha: 100)
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 300, height: 75)
+
+
+//Grey Rectangle
+canvas.fillColor = Color(hue: 150, saturation: 0, brightness: 80, alpha: 100)
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY:75 , width: 300, height: 75)
+
+
+//Dark Mountains
+for i in stride (from: 0, through: 25, by: 1){
+    canvas.drawLine(fromX: i, fromY: 75, toX: i, toY: 100-i)
+    canvas.drawLine(fromX: i+50, fromY: 75, toX: i+50, toY: 100-i)
+    canvas.drawLine(fromX: i+100, fromY: 75, toX: i+100, toY: 100-i)
+    canvas.drawLine(fromX: i+150, fromY: 75, toX: i+150, toY: 100-i)
+    canvas.drawLine(fromX: i+200, fromY: 75, toX: i+200, toY: 100-i)
+    canvas.drawLine(fromX: i+250, fromY: 75, toX: i+250, toY: 100-i)
+
+
+
+}
 
 
 //: ## Template code
