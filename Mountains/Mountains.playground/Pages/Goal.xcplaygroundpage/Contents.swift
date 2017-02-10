@@ -37,16 +37,43 @@ canvas.drawRectangle(bottomLeftX: 0, bottomLeftY:75 , width: 300, height: 75)
 
 //Dark Mountains
 for i in stride (from: 0, through: 25, by: 1){
+
+    // downward Slope
     canvas.drawLine(fromX: i, fromY: 75, toX: i, toY: 100-i)
     canvas.drawLine(fromX: i+50, fromY: 75, toX: i+50, toY: 100-i)
     canvas.drawLine(fromX: i+100, fromY: 75, toX: i+100, toY: 100-i)
     canvas.drawLine(fromX: i+150, fromY: 75, toX: i+150, toY: 100-i)
     canvas.drawLine(fromX: i+200, fromY: 75, toX: i+200, toY: 100-i)
     canvas.drawLine(fromX: i+250, fromY: 75, toX: i+250, toY: 100-i)
-
-
-
+    
+    // Upward Slope
+    canvas.drawLine(fromX: i+25, fromY: 75, toX: i+25, toY: 75+i)
+    canvas.drawLine(fromX: i+75, fromY: 75, toX: i+75, toY: 75+i)
+    canvas.drawLine(fromX: i+125, fromY: 75, toX: i+125, toY: 75+i)
+    canvas.drawLine(fromX: i+175, fromY: 75, toX: i+175, toY: 75+i)
+    canvas.drawLine(fromX: i+225, fromY: 75, toX: i+225, toY: 75+i)
+    canvas.drawLine(fromX: i+275, fromY: 75, toX: i+275, toY: 75+i)
 }
+
+//Bright Mountains 
+for j in stride(from: 0, through: 50, by: 1){
+    
+    //Downward Slope
+    canvas.drawLine(fromX: j, fromY: 150, toX: j, toY: 200-j)
+    canvas.drawLine(fromX: j+100, fromY: 150, toX: j+100, toY: 200-j)
+    canvas.drawLine(fromX: j+200, fromY: 150, toX: j+200, toY: 200-j)
+    canvas.drawLine(fromX: j+300, fromY: 150, toX: j+300, toY: 200-j)
+
+    // Upwar Slope
+    canvas.drawLine(fromX: j+50, fromY: 150, toX: j+50, toY: 150+j)
+    canvas.drawLine(fromX: j+150, fromY: 150, toX: j+150, toY: 150+j)
+    canvas.drawLine(fromX: j+250, fromY: 150, toX: j+250, toY: 150+j)
+
+
+    
+}
+
+
 
 
 //: ## Template code
